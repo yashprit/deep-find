@@ -1,6 +1,6 @@
 # deep-find [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-url]][daviddm-image]
 
-> find value for deep nesting keys
+> find value for deep nested keys
 
 
 ## Install
@@ -27,6 +27,58 @@ var obj = {
 }
 
 deepFind(obj, 'employee.name.first');
+```
+
+## Methods
+
+```js
+var deepFind = require('deep-find');
+```
+
+### deepFind([object], [array])
+
+pass array as argument
+
+```js
+var deepFind = require('deep-find');
+var obj = {
+  employees: [{
+    name: {
+      first: 'yash',
+      last: 'singh'
+    }
+  }, {
+    name: {
+      first: 'ruby',
+      last: 'singh'
+    }
+  }]
+}
+
+var value = deepFind(obj, ['employees[0]', 'name', 'first']);
+```
+
+### deepFind([object], [string])
+
+pass string as argument
+
+```js
+var deepFind = require('deep-find');
+var obj = {
+  employees: [{
+    name: {
+      first: 'yash',
+      last: 'singh'
+    }
+  }, {
+    name: {
+      first: 'ruby',
+      last: 'singh'
+    }
+  }]
+}
+
+var value = deepFind(obj, 'employees[0].name.first');
 ```
 
 ## Run Test
