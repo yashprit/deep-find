@@ -92,7 +92,7 @@ For bugs and feature requests, [please create an issue][issue-url].
 
 ## License
 
-MIT © [Yashprit Singh](www.yashprit.github.io)
+MIT © [Yashprit Singh](https://yashprit.github.io)
 
 [issue-url]: https://github.com/yashprit/deep-find/issues
 [npm-url]: https://npmjs.org/package/deep-find
