@@ -15,14 +15,18 @@ $ npm install --save deep-find
 ### JavaScript
 
 ```js
-var deep-find = require('deep-find');
+var deepFind = require('deep-find');
 
-deep-find('Rainbow');
-```
-```sh
+var obj = {
+  employee:{
+    name: {
+      first: 'yash',
+      last: 'singh'
+    }
+  }
+}
 
-# Creates a browser.js
-$ npm run browser
+deepFind(obj, 'employee.name.first');
 ```
 
 ## Run Test
