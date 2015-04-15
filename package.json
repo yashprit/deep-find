@@ -1,0 +1,40 @@
+{
+  "name": "deep-find",
+  "version": "0.0.0-alpha",
+  "description": "find value for deep nesting keys",
+  
+    "bugs": {
+      "url": "yashprit/deep-find/issues"
+  },
+  "author": {  "url": "yashprit.github.com"  ,  "name": "Yashprit Singh"  ,  "email": "yashprit@gmail.com" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "yashprit/deep-find"
+  },
+  "license": "MIT",
+  "files": [ 
+        "index.js"  
+  ],
+  "keywords": [
+    "deep-find"  ,
+        "deep"  ,
+        "nesting"  ,
+        "keys"  ,
+        "value" 
+  ],
+  "dependencies": { 
+  },
+  "devDependencies": { 
+        "mocha": "*" 
+       ,
+      "jshint-stylish": "^1.0.0"  ,
+        "browserify": "^7.0.0" 
+  },
+  "scripts": {  "browser": "browserify index.js > browser.js",
+      
+      
+      
+       "test": "mocha" 
+  } 
+}
