@@ -2,7 +2,6 @@
   "name": "deep-find",
   "version": "0.0.0-alpha",
   "description": "find value for deep nesting keys",
-
   "bugs": {
     "url": "yashprit/deep-find/issues"
   },
@@ -27,6 +26,7 @@
     "value"
   ],
   "devDependencies": {
+    "benchmark": "^2.1.0",
     "mocha": "*"
   },
   "scripts": {
