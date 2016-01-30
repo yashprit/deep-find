@@ -5,8 +5,8 @@ var deepFind = function(obj, path) {
     path = path.split('.');
   }
 
-  if (typeof path === 'array') {
-    path = path;
+  if (Array.isArray(path)) {
+    path = path.concat();
   }
 
   for (var i = 0; i < path.length; i++) {
