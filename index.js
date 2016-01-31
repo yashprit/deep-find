@@ -1,27 +1,23 @@
 'use strict';
 
 var deepFind = function(obj, path) {
+
   if (typeof path === 'string') {
     path = path.split('.');
   }
 
-  if (typeof path === 'array') {
-    path = path;
+  if (!Array.isArray(path)) {
+    path = path.concat();
   }
 
-  for (var i = 0; i < path.length; i++) {
-    if ((/\[[0-9]]/).test(path[i])) {
-      var keyIndex = path[i].split('[')
-      obj = obj[keyIndex[0]][parseInt(keyIndex[1], 10)]
-    } else {
-      obj = obj[path[i]];
+  return path.reduce(function (o, part) {
+    var keys = part.match(/\[(.*?)\]/);
+    if (keys) {
+      var key = part.replace(keys[0], '');
+      return o[key][keys[1]];
     }
-
-    if (!obj) {
-      return false;
-    }
-  }
-  return obj;
-}
+    return o[part];
+  }, obj);
+};
 
 module.exports = deepFind;

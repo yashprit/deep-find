@@ -68,3 +68,36 @@ it("should handle array as value", function() {
   var value = deepFind(obj, 'employees[0].name.first');
   assert.equal('yash', value)
 });
+
+it("should return null when no result is found", function() {
+  var obj = {
+    employees: [{
+      name: {
+        first: 'yash',
+        last: 'singh'
+      }
+    }, {
+      name: {
+        first: 'ruby',
+        last: 'singh'
+      }
+    }]
+  }
+
+  var value = deepFind(obj, 'employees[0].name.address');
+  assert.equal(null, value)
+});
+
+it("should handle string selectors", function() {
+  var obj = {
+    employees: {
+      'spaced key': {
+        first: 'yash',
+        last: 'singh'
+      }
+    }
+  }
+
+  var value = deepFind(obj, 'employees[spaced key].first');
+  assert.equal('yash', value)
+});
