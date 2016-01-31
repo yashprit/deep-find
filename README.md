@@ -86,6 +86,12 @@ var value = deepFind(obj, 'employees[0].name.first');
 npm test
 ```
 
+## Benchmark
+```sh
+node benchmark.js
+872,409 ops/sec ±1.47% (76 runs sampled)
+```
+
 ## Contribute or Report Issue
 For bugs and feature requests, [please create an issue][issue-url].
 
