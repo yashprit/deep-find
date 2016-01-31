@@ -1,6 +1,6 @@
 {
   "name": "deep-find",
-  "version": "0.0.0-alpha",
+  "version": "0.1.0",
   "description": "find value for deep nesting keys",
   "bugs": {
     "url": "yashprit/deep-find/issues"
