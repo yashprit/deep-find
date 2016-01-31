@@ -14,8 +14,7 @@ var deepFind = function(obj, path) {
     var keys = part.match(/\[(.*?)\]/);
     if (keys) {
       var key = part.replace(keys[0], '');
-      var index = parseInt(keys[1]);
-      return o[key][index];
+      return o[key][keys[1]];
     }
     return o[part];
   }, obj);
