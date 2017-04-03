@@ -89,7 +89,7 @@ npm test
 ## Benchmark
 ```sh
 node benchmark.js
-872,409 ops/sec ±1.47% (76 runs sampled)
+regular search x 1,212,008 ops/sec ±1.61% (81 runs sampled)
 ```
 
 ## Contribute or Report Issue

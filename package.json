@@ -1,14 +1,14 @@
 {
   "name": "deep-find",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "find value for deep nesting keys",
   "bugs": {
     "url": "yashprit/deep-find/issues"
   },
   "author": {
-    "url": "yashprit.github.com",
+    "url": "yashprit.com",
     "name": "Yashprit Singh",
-    "email": "yashprit@gmail.com"
+    "email": "yashprit@yashprit.com"
   },
   "repository": {
     "type": "git",
@@ -26,10 +26,10 @@
     "value"
   ],
   "devDependencies": {
-    "benchmark": "^2.1.0",
-    "mocha": "*"
+    "benchmark": "^2.1.4",
+    "mocha": "^3.2.0"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "node benchmark.js && mocha"
   }
 }
