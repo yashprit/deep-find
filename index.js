@@ -2,6 +2,9 @@
 
 var deepFind = function(obj, path) {
 
+  if (typeof obj !== "object") {
+	  return undefined;
+  }
   if (typeof path === 'string') {
     path = path.split('.');
   }
