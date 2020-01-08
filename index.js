@@ -2,7 +2,7 @@
 
 var deepFind = function(obj, path) {
 
-  if (typeof obj !== "object") {
+  if ((typeof obj !== "object") | obj === null) {
 	  return undefined;
   }
   if (typeof path === 'string') {
