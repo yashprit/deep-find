@@ -20,8 +20,8 @@ var deepFind = require('deep-find');
 var obj = {
   employee:{
     name: {
-      first: 'yash',
-      last: 'singh'
+      first: 'Jack',
+      last: 'Daniels'
     }
   }
 }
