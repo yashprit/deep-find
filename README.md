@@ -40,22 +40,23 @@ var deepFind = require('deep-find');
 pass array as argument
 
 ```js
-var deepFind = require('deep-find');
-var obj = {
+const deepFind = require('deep-find');
+const obj = {
   employees: [{
     name: {
-      first: 'yash',
-      last: 'singh'
+      first: 'Jack',
+      last: 'Daniels'
     }
   }, {
     name: {
-      first: 'ruby',
-      last: 'singh'
+      first: 'Milli',
+      last: 'Daniels'
     }
   }]
 }
 
-var value = deepFind(obj, ['employees[0]', 'name', 'first']);
+const value = deepFind(obj, ['employees[0]', 'name', 'first']);
+
 ```
 
 ### deepFind([object], [string])
@@ -63,22 +64,22 @@ var value = deepFind(obj, ['employees[0]', 'name', 'first']);
 pass string as argument
 
 ```js
-var deepFind = require('deep-find');
-var obj = {
+const deepFind = require('deep-find');
+const obj = {
   employees: [{
     name: {
-      first: 'yash',
-      last: 'singh'
+      first: 'Jack',
+      last: 'Daniels'
     }
   }, {
     name: {
-      first: 'ruby',
-      last: 'singh'
+      first: 'Milli',
+      last: 'Daniels'
     }
   }]
 }
 
-var value = deepFind(obj, 'employees[0].name.first');
+const value = deepFind(obj, 'employees[0].name.first');
 ```
 
 ## Run Test
